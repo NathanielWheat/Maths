@@ -12,3 +12,12 @@
 
 This repository is a collection of Mathematical projects, solutions, notes and explorations
 Built to serve as both documentation of my learning process but also as a learning resource, with particular interest into advanced mathematics, problem solving, probability, statistics and their application into computer science and quantitative finance.
+
+# Areas of Interest
+- Pure Mathematics
+- Further Mathematics
+- Calculus
+- Probability and Statistics
+- Linear Algebra
+- Mathematical Modelling
+- Computational Mathematics
