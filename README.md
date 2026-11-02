@@ -21,3 +21,12 @@ Built to serve as both documentation of my learning process but also as a learni
 - Linear Algebra
 - Mathematical Modelling
 - Computational Mathematics
+
+# Projects
+2D SUVAT Calculator
+
+A python based calculator that uses user input values in order to calculate all the suvat values for a 2d projectile.
+- Accepts any 3 or more known values
+- Calculates the remaining variables
+- supports unknown value input
+- designed to handle any 2d suvat calculation.
