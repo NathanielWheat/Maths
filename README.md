@@ -30,3 +30,9 @@ A python based calculator that uses user input values in order to calculate all 
 - Calculates the remaining variables
 - supports unknown value input
 - designed to handle any 2d suvat calculation.
+
+Probability - Coin flip
+
+Using foundational probability skills through python to find out the probability of landing on heads 5 times in a row atleast once
+- Limited flexibility
+- Currently demonstrates the use of an analytical method (Mathematical based) and the Monte Carlo method (simulation based)
