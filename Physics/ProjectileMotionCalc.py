@@ -37,11 +37,9 @@ print(f"Time of flight: {round(flight_time, 2)} s")
 print(f"horizontal_range: {round(horizontal_range, 2)} m")
 
 #measure distance travelled by each second
-print("Vertical Displacement:")
-for time in range((int(flight_time)) * 10 + 1):
+print("Distance travelled by each second:")
+for time in range(int(flight_time * 10) + 1):
     vert_distance_travelled = (v_comp * time/10) + (0.5 * (-g * ((time/10) ** 2)))
-    print(f"{time/10}:{round(vert_distance_travelled, 2)}")
-print("Horizontal Displacement:")
-for time in range((int(flight_time))* 10 + 1):
     horz_distance_travelled = (h_comp * time/10)
-    print(f"{time/10}:{round(horz_distance_travelled, 2)}")
+    print(f"{time/10}s:({round(horz_distance_travelled, 2)}, {round(vert_distance_travelled, 2)})")
+ 
