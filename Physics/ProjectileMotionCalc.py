@@ -1,5 +1,4 @@
 import math
-
 import matplotlib
 
 matplotlib.use("QtAgg")
@@ -53,14 +52,27 @@ for time in range(int(flight_time * 10) + 1):
     print(f"{time/10}s:({round(horz_distance_travelled, 2)}, {round(vert_distance_travelled, 2)})")
 horizontal_positions.append(horizontal_range)
 vertical_positions.append(0)
+max_height_b = max(vertical_positions)
+max_height_index = vertical_positions.index(max_height_b)
+max_height_horz = horizontal_positions[max_height_index]
 print(f"{round(flight_time, 2)}s:({round(horizontal_range, 2)}, 0.0)")
 print(f"Horizontal Positions: { [round(pos, 2) for pos in horizontal_positions] }")
 print(f"Vertical Positions: { [round(pos, 2) for pos in vertical_positions] }")
+print(f"Max Height: ({round(max_height_horz, 2)}, {round(max_height_b, 2)})")
 
-plt.plot(horizontal_positions, vertical_positions)
-
+plt.plot(
+    horizontal_positions,
+    vertical_positions,
+    color="cyan",
+    marker="o",
+    markerfacecolor="pink",
+    markeredgecolor="black"
+)
+plt.xlim(0, max(horizontal_positions))
 plt.xlabel("Horizontal Distance (m)")
 plt.ylabel("Vertical Height (m)")
 plt.title("Projectile Motion")
+plt.grid(True)
+plt.axhline(y=0, color='black', linewidth=2, linestyle='--')
 
 plt.show()
