@@ -1,8 +1,8 @@
-#Physics
+# Physics
 
 This collection contains multiple Physics calculators coded in python.
 
-#Contents
+# Contents
 
 2D SUVAT Calculator
 
