@@ -21,6 +21,7 @@ def get_value(question):
 #get variables
 velocity = get_value("What is your velocity?: ")
 angle = get_value("What is your angle to the horizontal?: ")
+initial_height = get_value("What is your initial Height?: ")
 g = 9.81
 
 #Calculations
@@ -29,8 +30,8 @@ h_comp = velocity * math.cos(angle_rad)
 v_comp = velocity * math.sin(angle_rad)
 final_velocity = -1 * (v_comp)
 initial_velocity = 1 * (v_comp)
-max_height = (v_comp ** 2) / (2 * g)
-flight_time = (final_velocity - initial_velocity) /(-g)
+max_height = (v_comp ** 2) / (2 * g) + initial_height
+flight_time = ((initial_velocity) + math.sqrt((initial_velocity ** 2) + 2 * g * initial_height)) / g
 horizontal_range = h_comp * flight_time
 
 #display calculated values
@@ -45,7 +46,7 @@ horizontal_positions = []
 vertical_positions = []
 print("Distance travelled by each second:")
 for time in range(int(flight_time * 10) + 1):
-    vert_distance_travelled = (v_comp * time/10) + (0.5 * (-g * ((time/10) ** 2)))
+    vert_distance_travelled = (v_comp * time/10) + (0.5 * (-g * ((time/10) ** 2))) + initial_height
     horz_distance_travelled = (h_comp * time/10)
     horizontal_positions.append(horz_distance_travelled)
     vertical_positions.append(vert_distance_travelled)
