@@ -1,0 +1,5 @@
+Anyone who is cloning this repository can install the dependencies with:
+
+python -m pip install -r
+requirements.txt
+
