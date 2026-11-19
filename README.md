@@ -40,7 +40,7 @@ Utilises the matplotlib module in order to create a graph to visualise each poin
 - Can handle projectile motion at any initial height
 - Only calculates for a projectile reaching ground level (y = 0)
 
-Probability - Coin flip
+Probability
 
 Using foundational probability skills through python to find out the probability of landing on heads 5 times in a row atleast once
 - Limited flexibility
